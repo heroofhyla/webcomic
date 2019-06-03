@@ -35,7 +35,7 @@ if ($comic->is_latest($id)){
 
 </p>
 
-<img src='<?= $comic->img_url($_GET['id']); ?>' />
+<img class="page" src='<?= $comic->img_url($_GET['id']); ?>' />
 
 <?php
 require(__DIR__ . '/../src/chunk/bottom.phtml');
