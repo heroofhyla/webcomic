@@ -1,0 +1,6 @@
+ErrorDocument 404 "404 - Page Not Found"
+
+RewriteEngine On
+
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteRule ^(.*)$ public/$1 [END]
