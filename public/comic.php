@@ -17,4 +17,7 @@ require(__DIR__ . '/../src/chunk/nav.phtml');
 
 <?php
 require(__DIR__ . '/../src/chunk/nav.phtml');
+
+echo $comic->text($id);
+
 require(__DIR__ . '/../src/chunk/bottom.phtml');

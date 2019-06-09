@@ -13,6 +13,17 @@ class Comic{
     return "img/page$id.png";
   }
 
+  public function text($id){
+    if ($this->has_text($id)){
+      return file_get_contents(__DIR__ . "/../../public/text/page{$id}.txt");
+    }
+    return "";
+  }
+
+  public function has_text($id){
+    return file_exists(__DIR__ . "/../../public/text/page{$id}.txt");
+  }
+
   private static function id_sort_callback($a,$b){
     $ai = intval($a);
     $bi = intval($b);
